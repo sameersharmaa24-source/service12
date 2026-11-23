@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Seva Directory – Find trusted local service providers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><a class="brand" href="/">Seva Directory</a>
+<nav id="nav"></nav></header>
+<main>
+<section class="hero"><h1>Need an electrician by tomorrow?</h1>
+<p>Search verified local providers, book a date, and track every request in one place.</p>
+<form id="search" class="searchbar">
+<input id="q" placeholder="Search plumber, cleaning, AC repair…" aria-label="Search">
+<select id="cat" aria-label="Category"><option value="">All categories</option></select>
+<input id="city" placeholder="City" aria-label="City"><button>Search</button></form></section>
+<section id="results" class="grid" aria-live="polite"></section>
+<section id="dash" class="dash" hidden></section>
+</main>
+<div id="modal" class="modal" hidden><div class="sheet" id="sheet"></div></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script></body></html>
